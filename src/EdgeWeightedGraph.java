@@ -96,10 +96,12 @@ public class EdgeWeightedGraph {
      * @return the coordinates of the nodes in the graph
      */
     public double[][] getCoordinates(){
+        /* TODO */
         return this.coord;
     }
     
-    public void setCoordinates(double [][]coord) {
+    public void setCoordinates(double[][] coord) {
+        /* TODO */
         this.coord = coord;
     }
 

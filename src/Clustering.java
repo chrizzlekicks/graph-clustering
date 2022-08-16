@@ -71,6 +71,7 @@ public class Clustering {
 	 * @param numberOfClusters number of expected clusters
 	 */
 	public void findClusters(int numberOfClusters){
+		/* TODO */
 		// create a MST with given Graph
 		PrimMST mst = new PrimMST(this.G);
 		// create an empty list and loop over edges returned from MST
@@ -100,6 +101,7 @@ public class Clustering {
 	 * @param threshold for the coefficient of variation
 	 */
 	public void findClusters(double threshold){
+		/* TODO */
 		// create a MST with given Graph
 		PrimMST mst = new PrimMST(this.G);
 		// create an empty list and loop over edges returned from MST
@@ -129,6 +131,7 @@ public class Clustering {
 	 * @return array of the number of the correctly classified data points per cluster
 	 */
 	public int[] validation() {
+		/* TODO */
 		int[] clusterNum = new int[clusters.size()];
 		for (int c = 0; c < clusters.size(); c++) {
 			int count = 0;
@@ -149,12 +152,14 @@ public class Clustering {
 	 * @return coefficient of variation
 	 */
 	public double coefficientOfVariation(List <Edge> part) {
+		/* TODO */
 		if (part.isEmpty()) return 0.0;
 		return (standardDeviation(part) / average(part));
 	}
 
 	/** Source: GeeksForGeeks */
 	private double average(List<Edge> part) {
+		/* TODO */
 		double result = 0;
 		for (Edge e : part) {
 			result += e.weight();
@@ -164,6 +169,7 @@ public class Clustering {
 
 	/** Source: GeeksForGeeks */
 	private double standardDeviation(List<Edge> part) {
+		/* TODO */
 		double result = 0;
 		for (Edge e : part) {
 			result += (e.weight() - average(part)) * (e.weight() - average(part));
@@ -172,6 +178,7 @@ public class Clustering {
 	}
 
 	public void connectedComponents(List<Edge> edges) {
+		/* TODO */
 		// create Union Find
 		UF uf = new UF(G.V());
 		// loop thru edges and identify representative
